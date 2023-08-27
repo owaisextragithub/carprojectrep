@@ -20,9 +20,7 @@ export const register = async (formData) => {
     try {
         let response = await axios.post(API_URL + 'register', formData);
         return response.data;
-        alert('Registered');
-
-
+        
     } catch (error) {
         console.error(error);
         alert("Could not Register");
