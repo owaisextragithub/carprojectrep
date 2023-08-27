@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getCars } from '../services/cars.service.js';
 import Navbar from "./Navbar"
 import ComponentList from "./componentsList"
+import ModelViewer from './ModelViewer.jsx';
 
 export default function Products(){
 
@@ -24,10 +25,11 @@ export default function Products(){
         <>
         <Navbar/>
         <div>
-        <div>
-            
+        <div className=' w-full flex justify-center'>
+            <ModelViewer/>
         </div>
-        <div>
+        <div className=' pl-40 flex justify-between items-center absolute bottom-0'>
+        <ComponentList/>
             <ul className=' flex'>
                <li className=' pr-42'>
                 <h2 className=' font-heading text-16'>Top Speed</h2>
@@ -51,7 +53,6 @@ export default function Products(){
                 </li> 
             </ul>
         </div>
-        <ComponentList/>
         </div>
         </>
     )

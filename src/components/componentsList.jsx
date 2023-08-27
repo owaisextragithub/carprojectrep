@@ -16,7 +16,7 @@ export default function componentList(){
       ];
     return(
         <>
-        <div className=' flex items-center  order-2 absolute bottom-0'>
+        <div className=' flex items-center '>
           <ul className=" relative z-50">
             {infoList.map((item, index) => (
               <a
