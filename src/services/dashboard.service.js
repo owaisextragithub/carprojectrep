@@ -1,13 +1,25 @@
-// import axios from "axios";
+export const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+        await axios.post("http://localhost:3000/admin/dashboard", formData);
+        alert("Car information uploaded successfully!");
 
-// const API_URL = "http://localhost:3000/admin"; // Remove the trailing slash
-// const dashboardData = { /* Your data object here */ }; // Replace with your actual data
+        setFormData({
+            year: "",
+            makemodel: "",
+            tagline: "",
+            topspeed: "",
+            power: "",
+            torque: "",
+            fuelcapacity: "",
+            color: "",
+            bodytype: "",
+            registeredin: "",
+            assembly: ""
 
-// export const DashForm = async () => {
-//   try {
-//     const response = await axios.post(`${API_URL}/dashboard`, dashboardData);
-//     console.log("Request successful:", response.data);
-//   } catch (error) {
-//     console.error("Request failed:", error);
-//   }
-// };
+        });
+    } catch (error) {
+        console.error(error);
+        alert("Error uploading car information");
+    }
+};
