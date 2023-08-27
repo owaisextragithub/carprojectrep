@@ -9,7 +9,7 @@ export default function Navbar() {
         <li className=''><a href=""><img className=' w-160' src={Logo} alt="" srcset="" /></a></li>
       </ul>
       </div>
-      <a className=' absolute right-0 pr-32' href="http://localhost:3000/main/login">Log Out</a>
+      <a className=' absolute right-0 pr-32 font-body' href="http://localhost:3000/main/login">Log Out</a>
       </div>
       </>
     )

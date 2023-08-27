@@ -25,12 +25,21 @@ export default function Products(){
         <>
         <Navbar/>
         <div>
+        <div className=" w-847 translate-y-16 m-auto">
+                <h4 className=' font-sub text-64 -mb-16'>1989</h4>
+                <h1 className=' font-heading text-64 '>Nissan Fairlady</h1>
+                <h4 className=' font-sub text-64 float-right -mt-16'>300ZX</h4>
+              </div>
         <div className=' w-full flex justify-center'>
             <ModelViewer/>
+            <div className=" w-500 h-500 bg-first rounded-full absolute -z-10 flex ">
+            </div>
         </div>
         <div className=' pl-40 flex justify-between items-center absolute bottom-0'>
-        <ComponentList/>
-            <ul className=' flex'>
+        <div>
+         <ComponentList/>   
+        </div>
+            <ul className=' flex pl-60'>
                <li className=' pr-42'>
                 <h2 className=' font-heading text-16'>Top Speed</h2>
                 <p className=' font-sub text-32 text-hover -mt-6'>169MPH</p>
