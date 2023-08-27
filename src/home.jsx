@@ -1,11 +1,13 @@
 import Logo from './assets/logoWhite.png'
 import { useState, useEffect } from 'react';
 import { getCars } from './services/cars.service.js';
+import Navbar from './components/Navbar';
 import './home.css'
 
 export default function Home() {
 
     const [cars, setCars] = useState([]);
+
 
     useEffect(() => {
         async function fetchCars() {
@@ -19,13 +21,10 @@ export default function Home() {
 
         fetchCars();
     }, []);
-
+    
     return (
-        <div style={{ backgroundColor: '#262626' }}>
-            <header style={{ width: '100%', height: '4em', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#262626' }}>
-                <img src={Logo} alt="Main_Logo" style={{ width: '150px', }} />
-                <a href="http://localhost:3000/main/login" style={{ cursor: 'pointer', position: 'absolute', width: '90%', margin: 'auto', color: 'white', textAlign: 'right' }}>Log Out</a>
-            </header>
+        <div>
+            <Navbar />
             <hr style={{ width: '98%', margin: 'auto', border: 'none', borderTop: '1px solid white' }} />
             <div className="homeContainer" style={{ width: '100%', height: '100vh', backgroundColor: '#262626' }}>
                 <h1 style={{ width: '100%', textAlign: 'center', color: '#fff' }}>Welcome to Our Car Dealership</h1>

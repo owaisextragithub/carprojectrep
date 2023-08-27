@@ -4,7 +4,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Login from './Login';
 import Register from './register';
 import Home from './home';
+import Products from './components/Products';
 import CarForm from './components/carForm.component.jsx';
+import './index.css'
 
 
 let browserRouter=createBrowserRouter([
@@ -19,6 +21,10 @@ let browserRouter=createBrowserRouter([
   {
     path:'home',
     element:  <Home/>
+  },
+  {
+    path:'products',
+    element:  <Products/>
   },
   {
     path: 'dashboard',
