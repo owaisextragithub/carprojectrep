@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './carForm.css'
-import axios from "axios";
+import { handleSubmit } from "../services/dashboard.service.js";
 
 function CarForm() {
     const [formData, setFormData] = useState({
@@ -16,32 +16,6 @@ function CarForm() {
         registeredin: "",
         assembly: ""
     });
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await axios.post("http://localhost:3000/admin/dashboard", formData);
-            alert("Car information uploaded successfully!");
-
-            setFormData({
-                year: "",
-                makemodel: "",
-                tagline: "",
-                topspeed: "",
-                power: "",
-                torque: "",
-                fuelcapacity: "",
-                color: "",
-                bodytype: "",
-                registeredin: "",
-                assembly: ""
-
-            });
-        } catch (error) {
-            console.error(error);
-            alert("Error uploading car information");
-        }
-    };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
