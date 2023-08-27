@@ -29,7 +29,7 @@ export default function Home() {
             <Navbar />
                 <div className=' px-60'>
                 <h1 className='font-heading text-heading text-60 pt-60'>Discover Your Dream Car</h1>
-                <p className=' font-body text-16'>Explore our collection of top-quality vehicles</p>
+                <p className='text-16'>Explore our collection of top-quality vehicles</p>
                 </div>
                 <div>
                     {cars.map((car) => (
