@@ -6,6 +6,7 @@ import Register from './register';
 import Home from './home';
 import Products from './components/Products';
 import CarForm from './components/carForm.component.jsx';
+import CarDetail from './CarDetail.jsx'
 import './index.css'
 
 
@@ -29,6 +30,10 @@ let browserRouter=createBrowserRouter([
   {
     path: 'dashboard',
     element: <CarForm/>
+  },
+  {
+    path:'/car/:carId',
+    Component: CarDetail
   }
 ]);
 

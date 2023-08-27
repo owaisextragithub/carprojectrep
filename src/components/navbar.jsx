@@ -1,9 +1,10 @@
 import Logo from '../assets/logoBlack.png';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const navbarStyle = {
     width: "98%",
-    margin:"auto",
+    margin: "auto",
     height: "4em",
     display: "grid",
     justifyContent: "center",
@@ -20,16 +21,18 @@ export default function Navbar() {
     width: '200px',
   };
 
-    return (
-      <>
+  return (
+    <>
       <div className="navbar w-full h-96 flex justify-center  items-center relative">
-    <div>
-      <ul>
-        <li className=''><a href=""><img className=' w-160' src={Logo} alt="" srcset="" /></a></li>
-      </ul>
+        <div>
+          <ul>
+            <li className=''><a href=""><img className=' w-160' src={Logo} alt="" srcset="" /></a></li>
+          </ul>
+        </div>
+        <Link to="/login" className="custom-link">
+          Sign Out
+        </Link>
       </div>
-      <a className=' absolute right-0 pr-32' href="http://localhost:3000/main/login">Log Out</a>
-      </div>
-      </>
-    )
-  }
+    </>
+  )
+}

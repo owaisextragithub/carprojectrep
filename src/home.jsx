@@ -19,33 +19,6 @@ export default function Home() {
         fetchCars();
     }, []);
 
-<<<<<<< HEAD
-    const carItemStyle = {
-        display: 'flex',
-        alignItems: 'center',
-        padding: '15px',
-        marginBottom: '10px',
-        background: "rgba(255, 255, 255, 0.16)",
-        borderRadius: "16px",
-        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-        backdropFilter: "blur(5px)",
-        webkitBackdropFilter: "blur(5px)",
-        border: "1px solid rgba(255, 255, 255, 0.15)",
-        textDecoration: 'none',
-        color: '#000',
-        transition: 'transform 0.2s',
-        cursor: 'pointer',
-        width: '90%',
-        fontFamily: 'Arial, sans-serif',
-        ':hover': {
-            transform: 'scale(1.05)',
-        },
-    };
-=======
->>>>>>> 47430db5ddadc0d509cca0b522567cad60fbb928
-
-
-
     return (
         <div>
             
