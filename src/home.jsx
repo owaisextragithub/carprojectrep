@@ -24,7 +24,6 @@ export default function Home() {
         alignItems: 'center',
         padding: '15px',
         marginBottom: '10px',
-        borderRadius: '5px',
         background: "rgba(255, 255, 255, 0.16)",
         borderRadius: "16px",
         boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
