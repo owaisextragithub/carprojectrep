@@ -1,0 +1,45 @@
+.car-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-item {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #4f4c45;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.car-image {
+    flex: 0 0 120px;
+    margin-right: 20px;
+}
+
+.car-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.car-details {
+    flex: 1;
+}
+
+.car-details h2 {
+    margin: 0;
+    font-size: 1.2rem;
+
+}
+
+.car-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
