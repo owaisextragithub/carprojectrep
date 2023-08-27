@@ -19,6 +19,7 @@ export default function Home() {
         fetchCars();
     }, []);
 
+<<<<<<< HEAD
     const carItemStyle = {
         display: 'flex',
         alignItems: 'center',
@@ -40,37 +41,35 @@ export default function Home() {
             transform: 'scale(1.05)',
         },
     };
+=======
+>>>>>>> 47430db5ddadc0d509cca0b522567cad60fbb928
 
-    const carImageStyle = {
-        flex: '0 0 auto',
-        marginRight: '20px',
-        width: '120px',
-        height: '80px',
-    };
 
-    const carDetailsStyle = {
-        flex: '1',
-    };
 
     return (
         <div>
             
-            <div style={{ width: '100%', height: '100vh', backgroundColor:"#303634"}}>
-                <br />
+            <div>
             <Navbar />
-                <br />
-                <h1 style={{ width: '100%', textAlign: 'center', color: '#000', fontFamily: 'Impact, sans-serif', fontSize: '36px' }}>Discover Your Dream Car</h1>
-                <p style={{ width: '100%', textAlign: 'center', color: '#000', fontSize: '18px', marginBottom: '30px' }}>Explore our collection of top-quality vehicles</p>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
+                <div className=' px-60'>
+                <h1 className='font-heading text-heading text-60 pt-60'>Discover Your Dream Car</h1>
+                <p className='text-16'>Explore our collection of top-quality vehicles</p>
+                </div>
+                <div>
                     {cars.map((car) => (
-                        <Link to={`/car/${car._id}`} key={car._id} style={carItemStyle}>
-                            <div style={carImageStyle}>
-                                <img src={car.photo} alt={`${car.make} ${car.model}`} />
+                        <Link to={`/car/${car._id}`} key={car._id} >
+                            <div className=' w-full h-200 flex items-center justify-between  px-120 mt-32'>
+                            <div className=' flex'>
+                            <div >
+                                <img className=' w-200 bg-heading h-150 rounded-xl' src={car.photo} alt={`${car.make} ${car.model}`} />
                             </div>
-                            <div style={carDetailsStyle}>
-                                <h2>{car.makemodel}</h2>
-                                <p>Year: {car.year}</p>
+                            <div className=' ml-16'>
+                                <h2 className=' font-heading text-24 pb-16'>{car.makemodel}</h2>
+                                <p className=' font-body'>Year: {car.year}</p>
                                 <p>Registered In: {car.registeredin}</p>
+                            </div>
+                            </div>
+                            <button className=' px-30 py-30 bg-heading text-white rounded-full hover:bg-first font-heading'>Dicover</button>
                             </div>
                         </Link>
                     ))}
