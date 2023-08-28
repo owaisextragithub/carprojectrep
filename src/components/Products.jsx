@@ -187,24 +187,24 @@ export default function Products(){
          <ComponentList/>   
         </div>
             <ul className=' flex pl-60 '>
-               <li className=' pr-42'>
-                <h2 className=' font-heading text-16'>Top Speed</h2>
-                <p className=' font-sub text-32 text-hover -mt-6'>169MPH</p>
+               <li className=' pr-42 mobile:pr-32'>
+                <h2 className=' font-heading text-16 mobile:text-12'>Top Speed</h2>
+                <p className=' font-sub text-32 mobile:text-20 text-hover -mt-6'>169MPH</p>
                 <p className=' font-sub -mt-8'>272KM/H</p>
                 </li> 
-               <li className=' pr-42'>
-                <h2 className=' font-heading text-16'>power</h2>
-                <p className=' font-sub text-32 text-hover -mt-6'>162 HP</p>
+               <li className=' pr-42 mobile:pr-32'>
+                <h2 className=' font-heading text-16 mobile:text-12'>power</h2>
+                <p className=' font-sub text-32 mobile:text-20 text-hover -mt-6'>162 HP</p>
                 <p className=' font-sub -mt-8'>9,250 RPM</p>
                 </li> 
-               <li className=' pr-42'>
-                <h2 className=' font-heading text-16'>Torque</h2>
-                <p className=' font-sub text-32 text-hover -mt-6'>130.5 N.M</p>
+               <li className=' pr-42 mobile:pr-32'>
+                <h2 className=' font-heading text-16 mobile:text-12'>Torque</h2>
+                <p className=' font-sub text-32 mobile:text-20 text-hover -mt-6'>130.5 N.M</p>
                 <p className=' font-sub -mt-8'>96.3 LBF.FT</p>
                 </li> 
-               <li className=' pr-42'>
-                <h2 className=' font-heading text-16'>Fuel Capacity</h2>
-                <p className=' font-sub text-32 text-hover -mt-6'>17 L</p>
+               <li className=' pr-42 mobile:pr-32'>
+                <h2 className=' font-heading text-16 mobile:text-12'>Fuel Capacity</h2>
+                <p className=' font-sub text-32 mobile:text-20 text-hover -mt-6'>17 L</p>
                 <p className=' font-sub -mt-8'>3.7IMP CAL</p>
                 </li> 
             </ul>
