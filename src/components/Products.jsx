@@ -182,11 +182,11 @@ export default function Products(){
             </ul>
             </div>
         </div>
-        <div className=' pl-40 flex justify-between items-center absolute bottom-0'>
+        <div className=' pl-40 flex items-center'>
         <div>
          <ComponentList/>   
         </div>
-            <ul className=' flex pl-60'>
+            <ul className=' flex pl-60 '>
                <li className=' pr-42'>
                 <h2 className=' font-heading text-16'>Top Speed</h2>
                 <p className=' font-sub text-32 text-hover -mt-6'>169MPH</p>
