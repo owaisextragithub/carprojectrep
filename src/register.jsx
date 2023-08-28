@@ -27,7 +27,7 @@ const Register = () => {
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card custom-card">
-            <div className="card-header custom-card-header">Register</div>
+            <div className="card-header custom-card-header bg-first font-heading">Register</div>
             <div className="card-body">
               <form>
                 <div className="mb-3">
@@ -68,7 +68,7 @@ const Register = () => {
                 </div>
                 <button
                   type="button"
-                  className="btn custom-btn"
+                  className="px-42 py-22 rounded-full text-white bg-first font-heading"
                   onClick={register}
                 >
                   Sign Up

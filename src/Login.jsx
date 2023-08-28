@@ -12,7 +12,7 @@ const Login = () => {
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="custom-card">
-            <div className="custom-card-header">Login</div>
+            <div className="custom-card-header bg-first font-heading">Login</div>
             <div className="card-body">
               <form>
                 <div className="mb-3">
@@ -41,7 +41,7 @@ const Login = () => {
                 </div>
                 <button
                   type="button"
-                  className="custom-btn"
+                  className="px-42 py-22 rounded-full text-white bg-first font-heading"
                   onClick={handleLogin}
                 >
                   Login
