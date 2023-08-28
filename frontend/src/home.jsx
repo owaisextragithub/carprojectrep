@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getCars } from './services/cars.service.js';
-import Navbar from '../src/components/navbar.jsx';
+import Navbar from './components/navbar.jsx';
 
 export default function Home() {
     const [cars, setCars] = useState([]);
