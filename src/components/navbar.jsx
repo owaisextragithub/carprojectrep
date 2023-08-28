@@ -13,7 +13,7 @@ export default function Navbar() {
             <li className=''><a href=""><img className=' w-160' src={Logo} alt="" srcset="" /></a></li>
           </ul>
         </div>
-        <div className=' absolute right-20 cursor-pointer'>
+        <div className=' absolute right-20 mobile:right-12 smallmobile:right-6 cursor-pointer'>
         <Link to="/login" className=" font-heading ">
           Sign Out
         </Link>
