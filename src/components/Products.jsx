@@ -25,9 +25,9 @@ export default function Products(){
         <>
         <Navbar/>
         <div>
-        <div className=' flex justify-between items-center px-160 '>
+        <div className=' '>
              {/* Left info tab */}
-            <div className=' info-tab-left'>
+            {/* <div className=' info-tab-left'>
             <ul>
                 <li>
                 <div className=' w-auto flex   justify-between'>
@@ -96,7 +96,7 @@ export default function Products(){
                 </div>
                 </li>
             </ul>
-            </div>
+            </div> */}
          {/*Model Section*/}
         <div className=' Model-Section'>
         <div className=" w-847 translate-y-16 m-auto">
@@ -111,7 +111,7 @@ export default function Products(){
         </div>
         </div>
         {/*Right Info tab*/}
-        <div className=' info-tab-right'>
+        {/* <div className=' info-tab-right'>
             <ul>
                 <li>
                 <div className=' w-auto flex   justify-between'>
@@ -180,7 +180,7 @@ export default function Products(){
                 </div>
                 </li>
             </ul>
-            </div>
+            </div> */}
         </div>
         <div className=' pl-40 flex items-center'>
         <div>
