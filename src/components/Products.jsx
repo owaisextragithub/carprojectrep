@@ -99,8 +99,8 @@ export default function Products(){
             </div> */}
          {/*Model Section*/}
         <div className=' Model-Section'>
-        <div className=" w-847 translate-y-16 m-auto">
-                <h4 className=' font-sub text-64 -mb-16'>1989</h4>
+        <div className=" w-847 mobile:w-500 translate-y-16 m-auto ">
+                <h4 className=' font-sub text-64 mobile:text-32 -mb-16'>1989</h4>
                 <h1 className=' font-heading text-64 '>Nissan Fairlady</h1>
                 <h4 className=' font-sub text-64 float-right -mt-16'>300ZX</h4>
               </div>
